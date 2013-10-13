@@ -1,12 +1,30 @@
 \documentclass[]{uhthesis}
 
 \usepackage{amssymb,amsmath}
-\usepackage{ifxetex,ifluatex}
-\usepackage{fullpage}
-\usepackage{csquotes}  
+%\usepackage{chapterbib}
+\usepackage{csquotes}
+%\usepackage{hyperref}
+%\usepackage{ifxetex,ifluatex}
 \usepackage{natbib}
-\usepackage{chapterbib}
 \usepackage{uhaas}
+\usepackage{amsmath}
+
+\usepackage{chapterfolder}
+% and we re-write includegraphics
+
+\usepackage{graphicx}
+\usepackage{epstopdf}
+ \DeclareGraphicsExtensions{.pdf,.eps,.png}
+ \let\includegraphicsWithoutCF\includegraphics
+\renewcommand{\includegraphics}[2][]{\includegraphicsWithoutCF[#1]{\cfcurrentfolder#2}}
+
+\newcommand{\kms}[0]{km\,s$^{-1}$}
+\newcommand{\glimpse}[0]{{\sc glimpse} }
+\newcommand{\vla}[0]{{\sc vla} }
+\newcommand{\magpis}[0]{{\sc magpis} }
+\newcommand{\citepy}[1]{\citeauthor{#1} (\citeyear{#1})}
+\newcommand{\hii}[0]{H{\sc ii} }
+\newcommand{\jcmt}[0]{{\sc jcmt} }
 
 \begin{document}
 \frontmatter
@@ -35,9 +53,8 @@ Molecular clouds are the birth sites of all star formation in the present-day un
 \listoffigures
 
 \mainmatter
-\input{intro.tex}
 
-\chapter{Testing}
-testing
+\cfchapter{Introduction}{ch1_intro}{intro.tex}
+\cfchapter{Molecular Rings around Interstellar Bubbles and the Thickness of Star-Forming Clouds}{ch2_bubbles}{ms.tex}
 
 \end{document}

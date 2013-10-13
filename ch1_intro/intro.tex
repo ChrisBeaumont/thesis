@@ -1,10 +1,9 @@
-\chapter{Introduction}
 %(Foster intro: 2660 words)
 %(Matthews intro: 4855 words)
 
 \section{A Brief History of Early Molecular Cloud Research}
 
-In the mid 18th century, scientists like Emanuael Swedenborg, Immanuel Kant, and Pierre Laplace anticipated the importance of an interstellar medium (ISM) of gas. They hypothesized (mostly correctly) that the ISM provided the raw materials for stars like our sun, and also provided -- in the form of an accretion disk -- a sink for protostars to shed their excess angular momentum as they collapse. The intuition of these early scientists is especially impressive considering that the only observational support for this nebular hypothesis were the poorly-understood handful of naked-eye nebulae like the Orion Nebula. The first convincing measurement of the interstellar medium came from \cite{Hartmann04}, who observed Calcium absorption lines in a spectroscopic binary. Because the calcium lines did not share the doppler motion of the stars, Hartmann realized that the absorbing material was unassociated with the stellar atmosphere, and instead in a foreground of diffuse material. 
+In the mid 18th century, scientists like Emanuael Swedenborg, Immanuel Kant, and Pierre Laplace anticipated the importance of an interstellar medium (ISM) of gas. They hypothesized (mostly correctly) that the ISM provided the raw materials for stars like our sun, and also provided -- in the form of an accretion disk -- a sink for protostars to shed their excess angular momentum as they collapse. The intuition of these early scientists is especially impressive considering that the only observational support for this nebular hypothesis were the poorly-understood handful of naked-eye nebulae like the Orion Nebula. The first convincing measurement of the interstellar medium came from \cite{Hartmann04}, who observed Calcium absorption lines in a spectroscopic binary. Because the calcium lines did not share the doppler motion of the stars, Hartmann realized that the absorbing material was unassociated with the stellar atmosphere, and instead in a foreground of diffuse material.
 
 Early observational studies of the interstellar medium relied on measuring the absorption of background starlight \citep{Barnard19, Bates51}. The modern observational study of molecular clouds began with the radio detection of molecular \textit{emission} from clouds \citep{Gundermann65, Palmer67, Wilson70}. Radio observations have the advantage that they measure the velocity-induced doppler-shift of cloud radiation, and hence provide hints about cloud motion. \cite{Goldreich74} commented on this potential:
 
@@ -12,7 +11,7 @@ Early observational studies of the interstellar medium relied on measuring the a
 
 This quote is remarkably prescient about the subsequent four decades of research. Properly interpreting the morphological clues from molecular cloud observations has been frustratingly difficult, despite continued dramatic improvements in the quality of our data. Indeed, when \cite{Goldreich74} attempted to interpret the dynamical clues of their radio data, they came to the conclusion that molecular clouds are in a state of free-fall collapse. This problematic interpretation has largely been dismissed, as it suggests that cloud collapse should quickly form stars at a rate 100 times higher than the observed star formation rate. \cite{Larson81} laid out the now-canonical interpretation of cloud dynamics -- that these large motions are signatures of supersonic turbulence, which support clouds against rapid gravitational collapse. The question of what sustains the turbulence in clouds remains open, and some researchers still posit that clouds are in free-fall collapse \citep{Vaz07}.
 
-What makes the physical interpretation of molecular cloud data so difficult? Two factors are important. First, molecular clouds are dominated by turbulence, which remains one of the most poorly understood branches of physics. Indeed, nobody has even been able to prove that the Navier-Stokes equations -- which describe turbulent fluid mechanics -- are always solvable.\footnote{This is one of seven famous ``Millennium Prize Problems'' in mathematics, and it's solution will earn you \$1 million from the Clay Mathematics Institute. If somebody proves that the Navier Stokes Equations do \emph{not} always have a solution, that would almost certainly suggest that they cannot be a valid description of fluid mechanics.} The intractability of turbulent fluid mechanics makes it difficult to generate simple observational predictions, or to assess whether or not a particular observation is consistent with a particular physical model. 
+What makes the physical interpretation of molecular cloud data so difficult? Two factors are important. First, molecular clouds are dominated by turbulence, which remains one of the most poorly understood branches of physics. Indeed, nobody has even been able to prove that the Navier-Stokes equations -- which describe turbulent fluid mechanics -- are always solvable.\footnote{This is one of seven famous ``Millennium Prize Problems'' in mathematics, and it's solution will earn you \$1 million from the Clay Mathematics Institute. If somebody proves that the Navier Stokes Equations do \emph{not} always have a solution, that would almost certainly suggest that they cannot be a valid description of fluid mechanics.} The intractability of turbulent fluid mechanics makes it difficult to generate simple observational predictions, or to assess whether or not a particular observation is consistent with a particular physical model.
 
 The second major difficulty in studying molecular clouds derives from their structural complexity -- clouds are highly structured, and always viewed in projection. Thus, compared to geometrically simpler objects like stars, it is more difficult to determine how projected measurements of clouds relate to three-dimensional cloud properties.
 
@@ -28,7 +27,7 @@ I believe we can better understand molecular clouds with improvements to the way
 
 \begin{itemize}
 \item{\textbf{Structure Identification}} Structure identification is a crucial early step in most molecular cloud analysis, and early blob-segmentation techniques do not adequately describe modern cloud datasets. Part of my thesis has focused on further developing hierarchical cloud segmentation methods \citep{Rosolowsky08}. These techniques better-describe molecular clouds, which are naturally hierarchical. I have also developed techniques to identify ISM structures using machine learning. Machine learning has not been applied to the task of ISM identification previously. However, I have found that it is an effective approach to identify features based on otherwise difficult-to-quantify morphological patterns that humans are adept at identifying.
-\item{\textbf{Synthetic Observation Analysis}} Observations are not clean measurements of the physical properties of molecular clouds. Instead, derived cloud properties are affected in complicated ways by radiative transfer, superposition, spatial abundance and temperature variations, noise, and spatial filtering. The only practical way to realistically account for these confounding factors is to study synthetic observations of molecular cloud simulations, where the true state of the cloud is known and can be compared to observations \citep{Goodman11}. 
+\item{\textbf{Synthetic Observation Analysis}} Observations are not clean measurements of the physical properties of molecular clouds. Instead, derived cloud properties are affected in complicated ways by radiative transfer, superposition, spatial abundance and temperature variations, noise, and spatial filtering. The only practical way to realistically account for these confounding factors is to study synthetic observations of molecular cloud simulations, where the true state of the cloud is known and can be compared to observations \citep{Goodman11}.
 \end{itemize}
 
 \section{Outline}
@@ -40,7 +39,7 @@ Chapter 3 (first published as \citealt{Beaumont11}) represents my first investig
 
 Chapter 4 (first published as \citealt{Beaumont12}) is a brief and self-contained paper that attempts to unify the interpretation of two common cloud statistics: the mass-size relationship of cloud substructures, and the cloud column density distribution. The former is an example of a local cloud description involving substructure identification, while the latter is a global description. These two statistics are often treated independently, but they are clearly related; a cloud with more material at high column density will possess substructures with greater mass at a given size. Furthermore, the mass-size relationship has been interpreted problematically in the past. Since \cite{Larson81} first reported that cloud masses scale with size as $M \propto R^2$, people have made the imprecise claim that clouds have constant surface density $\Sigma = \frac{M}{R^2}$. This is patently untrue, since column density maps of molecular clouds show a wide range of surface densities. Chapter 4 rephrases the mass-size relationship in terms of the column density distribution and its spatial variation within and among clouds. This rephrasing better illuminates how global cloud statistics like the column density distribution relate to local statistics of substructures.
 
-Chapter 5 (in press as \citealt{Beaumont13a}) tackles the difficult problem of quantifying how projection effects influence measurements of cloud properties. Because clouds are always observed in projection, measurements of cloud intensity in PP or PPV relates only indirectly to information about 3D (Position-Position-Position, or PPP) cloud structure. A very common -- and largely untested -- assumption among molecular cloud researchers is that cloud substructures along the same line of sight move at different velocities, such that structures identified in PPV cubes correspond to density structures in 3D. In Chapter 5 I test that assumption, using synthetic observations of molecular cloud simulations. I present a new technique to measure the detailed correspondence between PPV and PPP substructures in a cloud, which allows us to identify which regions of a cloud are most heavily affected by superposition. We also use this comparison to measure how well measurements like substructure mass, velocity dispersion, size, and virial parameter recover the true values. We explore how disabling individual factors like opacity or chemistry affect cloud measurements. We generally find that projection effects introduce a 30-100\% scatter in measured cloud properties. This is particularly problematic for assessing gravitational boundedness, since most clouds are observed to be within a factor of two of equipartition between kinetic and gravitational potential energy. 
+Chapter 5 (in press as \citealt{Beaumont13a}) tackles the difficult problem of quantifying how projection effects influence measurements of cloud properties. Because clouds are always observed in projection, measurements of cloud intensity in PP or PPV relates only indirectly to information about 3D (Position-Position-Position, or PPP) cloud structure. A very common -- and largely untested -- assumption among molecular cloud researchers is that cloud substructures along the same line of sight move at different velocities, such that structures identified in PPV cubes correspond to density structures in 3D. In Chapter 5 I test that assumption, using synthetic observations of molecular cloud simulations. I present a new technique to measure the detailed correspondence between PPV and PPP substructures in a cloud, which allows us to identify which regions of a cloud are most heavily affected by superposition. We also use this comparison to measure how well measurements like substructure mass, velocity dispersion, size, and virial parameter recover the true values. We explore how disabling individual factors like opacity or chemistry affect cloud measurements. We generally find that projection effects introduce a 30-100\% scatter in measured cloud properties. This is particularly problematic for assessing gravitational boundedness, since most clouds are observed to be within a factor of two of equipartition between kinetic and gravitational potential energy.
 
 Finally, Chapter 6 (submitted as \citealt{Beaumont13b}) returns to the study of bubbles first discussed in Chapter 2, as well as the machine learning techniques in Chapter 3. To date, the majority of known interstellar bubbles in our Galaxy have been identified by the Milky Way Project -- a citizen scientist initiative where the public identifies bubbles in images from the \textit{Spitzer Space Telescope} \citep{Simpson12}. However, citizen science searches will need to be augmented by algorithmic searches in order to handle the next generation of large astrophysical datasets. We developed a technique called Brut to train a machine learning algorithm to detect bubbles, based on the Milky Way Project catalog. Brut is successfully able to detect bubbles based on their approximately circular morphologies. More importantly, it provides a confidence measure for each bubble candidate that can be calibrated against the classifications of expert astronomers. This allows us to reassess the objects in the Milky Way Catalog, to identify probable non-bubble interlopers. We find that 10-30\% of the catalog contains objects that an expert astronomer would be unlikely to classify as a bubble. Brut was able to identify several biases in the Milky Way Project, including an over-identification of false bubbles near giant HII regions and away from the Galactic midplane. More broadly, Brut demonstrates the synergies that exist between citizen science and machine learning approaches to structure identification, and suggests a path forward for analyzing increasingly large datasets of the interstellar medium.
 
@@ -49,74 +48,74 @@ Finally, Chapter 6 (submitted as \citealt{Beaumont13b}) returns to the study of 
 \begin{thebibliography}{16}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
-\bibitem[Barnard(1919)]{Barnard19} Barnard, E.~E.\ 1919, \apj, 
-49, 1 
+\bibitem[Barnard(1919)]{Barnard19} Barnard, E.~E.\ 1919, \apj,
+49, 1
 
-\bibitem[Bates 
+\bibitem[Bates
 \& Spitzer(1951)]{Bates51} Bates, D.~R., \& Spitzer, L., Jr.\ 1951, \apj, 113, 441
 
-\bibitem[Beaumont 
-\& Williams(2010)]{Beaumont10} Beaumont, C.~N., \& Williams, J.~P.\ 2010, \apj, 709, 791 
+\bibitem[Beaumont
+\& Williams(2010)]{Beaumont10} Beaumont, C.~N., \& Williams, J.~P.\ 2010, \apj, 709, 791
 
 
-\bibitem[Beaumont et al.(2011)]{Beaumont11} Beaumont, C.~N., 
-Williams, J.~P., \& Goodman, A.~A.\ 2011, \apj, 741, 14 
+\bibitem[Beaumont et al.(2011)]{Beaumont11} Beaumont, C.~N.,
+Williams, J.~P., \& Goodman, A.~A.\ 2011, \apj, 741, 14
 
 
-\bibitem[Beaumont et al.(2012)]{Beaumont12} Beaumont, C.~N., 
-Goodman, A.~A., Alves, J.~F., et al.\ 2012, \mnras, 423, 2579 
+\bibitem[Beaumont et al.(2012)]{Beaumont12} Beaumont, C.~N.,
+Goodman, A.~A., Alves, J.~F., et al.\ 2012, \mnras, 423, 2579
 
-\bibitem[Beaumont et al.(2013a)]{Beaumont13a} Beaumont, C.~N., 
-Offner, S.~S.~R., Shetty, R., Glover, S.~C.~O., 
-\& Goodman, A.~A.\ 2013, arXiv:1310.1929 
+\bibitem[Beaumont et al.(2013a)]{Beaumont13a} Beaumont, C.~N.,
+Offner, S.~S.~R., Shetty, R., Glover, S.~C.~O.,
+\& Goodman, A.~A.\ 2013, arXiv:1310.1929
 
-\bibitem[Beaumont et al.(2013b)]{Beaumont13b} Beaumont, C.~N., 
-Goodman, A.~A., Williams, J.~P., Kendrew, S., Simpson, R.\ 2013, ApJ submitted 
+\bibitem[Beaumont et al.(2013b)]{Beaumont13b} Beaumont, C.~N.,
+Goodman, A.~A., Williams, J.~P., Kendrew, S., Simpson, R.\ 2013, ApJ submitted
 
-\bibitem[Elmegreen 
-\& Scalo(2004)]{Elmegreen04} Elmegreen, B.~G., \& Scalo, J.\ 2004, \araa, 42, 211 
+\bibitem[Elmegreen
+\& Scalo(2004)]{Elmegreen04} Elmegreen, B.~G., \& Scalo, J.\ 2004, \araa, 42, 211
 
-\bibitem[Hartmann(1904)]{Hartmann04} Hartmann, J.\ 1904, \apj, 20,  338 
+\bibitem[Hartmann(1904)]{Hartmann04} Hartmann, J.\ 1904, \apj, 20,  338
 
-\bibitem[Herzberg(1951)]{Herzberg51} Herzberg, G.\ 1951, \aj, 56, 118 
+\bibitem[Herzberg(1951)]{Herzberg51} Herzberg, G.\ 1951, \aj, 56, 118
 
 \bibitem[Goodman(2011)]{Goodman11} Goodman, A.~A.\ 2011,  Computational Star Formation, 270, 511
 
-\bibitem[Goldreich 
-\& Kwan(1974)]{Goldreich74} Goldreich, P., \& Kwan, J.\ 1974, \apj, 189, 441 
+\bibitem[Goldreich
+\& Kwan(1974)]{Goldreich74} Goldreich, P., \& Kwan, J.\ 1974, \apj, 189, 441
 
-\bibitem[Gundermann et al.(1965)]{Gundermann65} Gundermann, E.~J., 
-Goldstein, S.~J., Jr., \& Lilley, A.~E.\ 1965, \aj, 70, 321 
+\bibitem[Gundermann et al.(1965)]{Gundermann65} Gundermann, E.~J.,
+Goldstein, S.~J., Jr., \& Lilley, A.~E.\ 1965, \aj, 70, 321
 
-\bibitem[Larson(1981)]{Larson81} Larson, R.~B.\ 1981, \mnras, 
+\bibitem[Larson(1981)]{Larson81} Larson, R.~B.\ 1981, \mnras,
 194, 809
 
-\bibitem[Palmer 
-\& Zuckerman(1967)]{Palmer67} Palmer, P., \& Zuckerman, B.\ 1967, \apj, 148, 727 
+\bibitem[Palmer
+\& Zuckerman(1967)]{Palmer67} Palmer, P., \& Zuckerman, B.\ 1967, \apj, 148, 727
 
-\bibitem[Pineda et al.(2009)]{Pineda09} Pineda, J.~E., 
+\bibitem[Pineda et al.(2009)]{Pineda09} Pineda, J.~E.,
 Rosolowsky, E.~W., \& Goodman, A.~A.\ 2009, \apjl, 699, L134
 
-\bibitem[V{\'a}zquez-Semadeni et al.(2007)]{Vaz07} 
-V{\'a}zquez-Semadeni, E., G{\'o}mez, G.~C., Jappsen, A.~K., et al.\ 2007, 
-\apj, 657, 870 
+\bibitem[V{\'a}zquez-Semadeni et al.(2007)]{Vaz07}
+V{\'a}zquez-Semadeni, E., G{\'o}mez, G.~C., Jappsen, A.~K., et al.\ 2007,
+\apj, 657, 870
 
-\bibitem[V{\'a}zquez-Semadeni 
-\& Garc{\'{\i}}a(2001)]{Vaz01} V{\'a}zquez-Semadeni, E., \& Garc{\'{\i}}a, N.\ 2001, \apj, 557, 727 
+\bibitem[V{\'a}zquez-Semadeni
+\& Garc{\'{\i}}a(2001)]{Vaz01} V{\'a}zquez-Semadeni, E., \& Garc{\'{\i}}a, N.\ 2001, \apj, 557, 727
 
-\bibitem[Rosolowsky et al.(2008)]{Rosolowsky08} Rosolowsky, E.~W., 
-Pineda, J.~E., Kauffmann, J., \& Goodman, A.~A.\ 2008, \apj, 679, 1338 
+\bibitem[Rosolowsky et al.(2008)]{Rosolowsky08} Rosolowsky, E.~W.,
+Pineda, J.~E., Kauffmann, J., \& Goodman, A.~A.\ 2008, \apj, 679, 1338
 
-\bibitem[Simpson et al.(2012)]{Simpson12} Simpson, R.~J., Povich, 
-M.~S., Kendrew, S., et al.\ 2012, \mnras, 424, 2442 
+\bibitem[Simpson et al.(2012)]{Simpson12} Simpson, R.~J., Povich,
+M.~S., Kendrew, S., et al.\ 2012, \mnras, 424, 2442
 
-\bibitem[Stutzki 
+\bibitem[Stutzki
 \& Guesten(1990)]{Stutzki90} Stutzki, J., \& Guesten, R.\ 1990, \apj, 356, 513
 
-\bibitem[Williams et al.(1994)]{Williams94} Williams, J.~P., de 
+\bibitem[Williams et al.(1994)]{Williams94} Williams, J.~P., de
 Geus, E.~J., \& Blitz, L.\ 1994, \apj, 428, 693
 
-\bibitem[Wilson et al.(1970)]{Wilson70} Wilson, R.~W., Jefferts, 
+\bibitem[Wilson et al.(1970)]{Wilson70} Wilson, R.~W., Jefferts,
 K.~B., \& Penzias, A.~A.\ 1970, \apjl, 161, L43
 
 \end{thebibliography}
