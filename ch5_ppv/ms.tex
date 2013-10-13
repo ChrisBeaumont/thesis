@@ -32,7 +32,7 @@ Molecular cloud motions are dominated by turbulence at scales above $\sim 0.1$ p
 
 The aim of this paper is to measure how well intensity structures extracted from PPV cubes correspond to density structures in PPP space. Since we can never measure how well PPV and PPP structures match up in the observed Universe, we need to make these measurements using simulations, where complete information is available in both ``spaces'' \citep{http://adsabs.harvard.edu/abs/2011IAUS..270..511G}.
 
-We begin with a discussion of how observational effects can distort measurements of cloud properties in Section \ref{sec:overview}. In Section \ref{sec:method}, we describe a technique to quantify how well an observed intensity feature corresponds to a real PPP structure, by measuring the partial overlap of density structures and observational features in PPV space. This technique leverages the dendrogram algorithm to decompose hierarchical cloud structure, by tracking how iso-intensity contour surfaces nest inside one another \citep{http://adsabs.harvard.edu/abs/2008ApJ...679.1338R}. By performing radiative transfer calculations on two numerical hydrodynamic models, we construct synthetic $^{12}$CO and $^{13}$CO observations of molecular clouds (Section \ref{sec:sim}). We use the COMPLETE observations of Perseus as a point of comparison throughout this work \citep{http://adsabs.harvard.edu/abs/2006AJ....131.2921R} and compare these simulations to Perseus in detail in Section \ref{sec:perseus}.
+We begin with a discussion of how observational effects can distort measurements of cloud properties in Section \ref{sec:overview}. In Section \ref{sec:method_ch5_ppv}, we describe a technique to quantify how well an observed intensity feature corresponds to a real PPP structure, by measuring the partial overlap of density structures and observational features in PPV space. This technique leverages the dendrogram algorithm to decompose hierarchical cloud structure, by tracking how iso-intensity contour surfaces nest inside one another \citep{http://adsabs.harvard.edu/abs/2008ApJ...679.1338R}. By performing radiative transfer calculations on two numerical hydrodynamic models, we construct synthetic $^{12}$CO and $^{13}$CO observations of molecular clouds (Section \ref{sec:sim}). We use the COMPLETE observations of Perseus as a point of comparison throughout this work \citep{http://adsabs.harvard.edu/abs/2006AJ....131.2921R} and compare these simulations to Perseus in detail in Section \ref{sec:perseus}.
 We apply our analysis in Section \ref{sec:result} to study how well measurements of intrinsic cloud properties --  mass, size, velocity dispersion, and the virial parameter -- can be recovered from observations.
 
 \subsection{Overview of Observational Effects}
@@ -61,16 +61,16 @@ break the correspondence between
 PPP structures and PPV features. First, distinct positions along the
 same line of sight that move at similar velocities will project to the
 same region in PPV. Thus, a feature in PPV may sample
-two or more density structures. This is the problem of \textit{superposition}, and is illustrated in Figure \ref{fig:schematic}a.
+two or more density structures. This is the problem of \textit{superposition}, and is illustrated in Figure \ref{fig:schematic_ch5_ppv}a.
 Second, spatial variations in $v_z$ affect
 the gradient term in Equation \ref{eq:projection}, and can modulate the $\rho_{\rm PPV}$ field independently of $\rho_{\rm PPP}$.
 In other words, a single density structure can map to multiple \textit{velocity-induced} PPV features. This is shown schematically
-in Figure \ref{fig:schematic}b.
+in Figure \ref{fig:schematic_ch5_ppv}b.
 
 \begin{figure}[h!]
 \includegraphics[width=5in]{figures/schematic}
 \caption{Schematic representation of superposition and velocity-induced structures. Colors indicate velocity. Left: Three PPP structures (top) merge into 2 PPV structures (bottom), due to the similar velocity of the front and back structures. Right: A single density structure with internal velocity gradients (top) splits into two PPV structures (bottom).}
-\label{fig:schematic}
+\label{fig:schematic_ch5_ppv}
 \end{figure}
 
 In addition to projection, observations are also subject to chemical and radiative transfer
@@ -98,7 +98,7 @@ both by projection into 2D, as well as superposition of distinct cloud features.
 Using a similar analysis,  \cite{http://adsabs.harvard.edu/abs/2002ApJ...569..280J} attempted to invert the
 distribution of apparent axis ratios to recover the intrinsic shape distribution of clouds. This inversion assumed that observed cloud shapes are unaffected by superposition, however.
 
-\cite{http://adsabs.harvard.edu/abs/2000ApJ...532..353P}  correlated PPV structures in MHD simulations with the original density field and velocity field. The features in their PPV maps resemble the patterns in the velocity field more  than the density field. There were also more small-scale PPV structures than there were PPP structures. The authors attributed these small PPV structures to the velocity-induced structures shown in Figure \ref{fig:schematic}b.
+\cite{http://adsabs.harvard.edu/abs/2000ApJ...532..353P}  correlated PPV structures in MHD simulations with the original density field and velocity field. The features in their PPV maps resemble the patterns in the velocity field more  than the density field. There were also more small-scale PPV structures than there were PPP structures. The authors attributed these small PPV structures to the velocity-induced structures shown in Figure \ref{fig:schematic_ch5_ppv}b.
 
 \cite{http://adsabs.harvard.edu/abs/2001ApJ...546..980O} cataloged ``observed'' structures in their 3D MHD simulations by identifying regions of contrast in 2D projections. They, too, noted that features identified in this way often consist of several superposed density structures. Even though their feature extraction process ignored line-of-sight velocity information, they reported that velocity information is often unable to disambiguate superpositions in 2D.
 
@@ -116,7 +116,7 @@ transfer to better model the important effects of excitation and opacity.
 
 
 \section{Methodology}
-\label{sec:method}
+\label{sec:method_ch5_ppv}
 While the net effects of projection, chemistry, radiative transfer, noise, and resolution are very difficult to study analytically, the effects can be measured empirically in simulations.  Here we describe our approach.
 
 Consider a particular density structure, denoted by $R_i$. The structures in this work have clearly-defined boundaries (Table \ref{tab:terms}), so $R_i$ is described by a collection of voxels (3D pixels). Likewise, let $O_j$ denote the set of PPV voxels describing a particular observed feature. Using Equation \ref{eq:projection}, we can compute $\rho_{\rm PPV}(R_i)$, the distribution of $R_i$ in PPV ignoring the rest of the cloud. We can also measure $I(O_j)$, the intensity distribution of $O_j$ in PPV. We then define the similarity between PPP structure $i$ and PPV feature $j$ as
