@@ -5,9 +5,9 @@
 %% The original source files were:
 %%
 %% uhthesis.dtx  (with options: `class')
-%% 
+%%
 %% LaTeX2e document class for formatting University of Hawaii theses
-%% 
+%%
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{uhthesis}[2001/04/01 University of Hawaii thesis format]
 \newif\if@preprint
@@ -149,7 +149,7 @@
     \@title\\[7ex]
     \begin{singlespace}
       A DISSERTATION SUBMITTED TO THE GRADUATE DIVISION OF THE \\
-      UNIVERSITY OF HAWAI`I IN PARTIAL FULFILLMENT OF THE \\
+      UNIVERSITY OF HAWAI`I AT M\=ANOA IN PARTIAL FULFILLMENT OF THE \\
       REQUIREMENTS FOR THE DEGREE OF \\[3ex]
     \end{singlespace}
     DOCTOR OF PHILOSOPHY \\

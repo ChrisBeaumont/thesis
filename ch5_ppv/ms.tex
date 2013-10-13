@@ -662,9 +662,7 @@ We thank  Jens Kauffmann, Lukas Konstandin, Ralf Klessen, Eve Ostriker,  Erik Ro
 
 \cfinput{bib.tex}
 
-\appendix{
-
-\section{Diagnostics}
+\section{Appendix A: Diagnostics}
 \label{sec:diagnostics}
 
 This paper uses simulations as surrogates for molecular clouds like
@@ -755,7 +753,7 @@ Table \ref{tab:scores} summarizes these scores for the O1 and S11 simulation, us
 \label{fig:dgrid_rahul}
 \end{figure}
 
-\section{Extracting cloud properties from Dendrograms}
+\section{Appendix B: Extracting cloud properties from Dendrograms}
 
 The dendrogram algorithm defines a structure as a specific set of
 connected voxels; we denote this set as $\Omega$. The intensity value at a given location $\vec{r}$ is denoted as $I(\vec{r})$ (this corresponds to the density for structures in a PPP cube). Here we describe how we measure properties from such a structure.
@@ -818,4 +816,3 @@ M_{\rm PPV} = \sum_{\Omega} I(\vec{r}) \delta v \delta x^2 X^{\rm syn}
 where $\delta v$ is the velocity width of a pixel, and $\delta x$ is the length of a pixel.
 
 The brightest 5\% of pixels represent the densest regions of each simulation, where the opacity is highest. The X factor derived from these pixels tends to over-estimate masses from less-opaque but equally-excited lines of sight, with lower mass-to-light ratios. Likewise, it underestimates the mass for the faintest lines of sight, where CO is sub-thermally excited and the mass-to-light ratio is large.
-}
