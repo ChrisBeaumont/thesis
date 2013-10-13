@@ -17,6 +17,7 @@
  \DeclareGraphicsExtensions{.pdf,.eps,.png}
  \let\includegraphicsWithoutCF\includegraphics
 \renewcommand{\includegraphics}[2][]{\includegraphicsWithoutCF[#1]{\cfcurrentfolder#2}}
+ 
 
 \newcommand{\kms}[0]{km\,s$^{-1}$}
 \newcommand{\glimpse}[0]{{\sc glimpse} }
@@ -28,6 +29,11 @@
 \newcommand{\jcmt}[0]{{\sc jcmt} }
 \newcommand{\rhopdf}[0]{$\rho-$PDF}
 \newcommand{\npdf}[0]{$\mathcal{N}$-PDF}
+\newcommand{\coa}[0]{$^{12}$CO (J=1-0)}
+\newcommand{\cob}[0]{$^{12}$CO (J=3-2)}
+\newcommand{\coc}[0]{$^{13}$CO (J=1-0)}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
 
 \begin{document}
 \frontmatter
@@ -61,5 +67,6 @@ Molecular clouds are the birth sites of all star formation in the present-day un
 \cfchapter{Molecular Rings around Interstellar Bubbles and the Thickness of Star-Forming Clouds}{ch2_bubbles}{ms.tex}
 \cfchapter{Classifying structures in the ISM with Support Vector Machines: the G16.05-0.57 supernova remnant}{ch3_snr}{ms.tex}
 \cfchapter{A Simple Perspective on the Mass-Area Relationship in Molecular Clouds}{ch4_larson}{ms.tex}
+\cfchapter{Quantifying Observational Projection Effects Using Molecular Cloud Simulations}{ch5_ppv}{ms.tex}
 
 \end{document}

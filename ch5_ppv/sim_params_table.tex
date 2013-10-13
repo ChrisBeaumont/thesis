@@ -1,0 +1,31 @@
+
+\begin{deluxetable}{lll}
+\tablecolumns{3}
+\tablewidth{0in}
+\tabletypesize{\scriptsize}
+\tablecaption{Summary of each simulation}
+\tablehead{\colhead{} & \colhead{S11} & \colhead{O1}}
+\startdata
+Box Size & 20 pc & 25 pc \\
+Simulation Code & Zeus-MP & ORION \\
+Gridding & 256$^3$ & 256$^3$ + 4 levels of AMR refinement \\
+Driven Turbulence & Yes & Yes \\
+Driving Power Spectrum & Uniform $1 < k < 2$ & Uniform $1 < k < 2$ \\
+Gravity & No & Yes \\
+B field & 5.85 $\mu$G & 0 \\
+Gas Temperature & Variable (10-200K) & 15K \\
+Chemistry & H, O, C & None \\
+Background UV & 2.7e-3 erg cm$^{-2}$ s$^{-1}$ & No \\
+Constant CO/H$_2$ Abundance & No & 1.75 e-4 \\
+$^{12}$CO/$^{13}$CO abundance & 70 & 70 \\
+Radiative Transfer Code & RADMC 3D & RADMC 3D \\
+Microturbulence & 0.2 km s$^{-1}$ & 0.2 km s$^{-1}$ \\
+Metallicity & Solar & N/A \\
+Mean number density ($n_{\rm H}$) & 100 cm$^{-3}$ & 58 cm$^{-3}$ \\
+Mach Number & $\sim 6$ & 22 \\
+Isothermal & No & Yes \\
+Output time(s) & 5.7 Myr & 2.5 Myr (with gravity)\\
+Mass in stars & N/A & 722 M$_{\odot}$ (2.4\%)
+\enddata
+\label{tab:sim_params}
+\end{deluxetable}
